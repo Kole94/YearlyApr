@@ -43,7 +43,7 @@ const AuroraSwap = () => {
 
     let decimals = await poolWETH.decimals();
     let stakedCount = staked / 10 ** decimals;
-    let allocPoi = parseInt(0x4f, 10);
+    let allocPoi = poolWETHInfo.allocPoi;
 
     var poolRewardsPerWeek = (allocPoi / totalAllocPoints) * rewardsPerWeek;
 
